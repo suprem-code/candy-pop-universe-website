@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms and Conditions — Candy Pop Universe</title>
+  <meta name="description" content="Official Terms and Conditions for Candy Pop Universe Android game by Atherion Labs.">
+  <style>
+    :root {
+      --primary: #7c3aed;
+      --primary-dark: #6d28d9;
+      --primary-light: #f5f3ff;
+      --accent: #ec4899;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background-color: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      padding: 0;
+    }
+    .header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .header-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .brand-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--primary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 18px;
+    }
+    .brand-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .brand-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .nav-toggle {
+      display: flex;
+      background: var(--bg);
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      gap: 4px;
+    }
+    .nav-btn {
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+    }
+    .nav-btn.active {
+      background: #ffffff;
+      color: var(--primary);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .nav-btn:hover:not(.active) {
+      color: #0f172a;
+    }
+    .container {
+      max-width: 860px;
+      margin: 24px auto 60px;
+      padding: 0 16px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 24px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+    @media (min-width: 640px) {
+      .card { padding: 48px; }
+      .container { margin: 40px auto 80px; }
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      background: linear-gradient(135deg, var(--primary), #4f46e5);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 28px;
+      line-height: 1.25;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+    @media (min-width: 640px) { h1 { font-size: 32px; } }
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 13px;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 28px;
+    }
+    .meta-bar strong { color: var(--text); }
+    h2 {
+      font-size: 18px;
+      color: #0f172a;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    h3 {
+      font-size: 15px;
+      color: #334155;
+      margin-top: 16px;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    p { margin-bottom: 12px; font-size: 14.5px; color: #334155; }
+    ul { margin-left: 20px; margin-bottom: 14px; font-size: 14.5px; color: #334155; }
+    li { margin-bottom: 6px; }
+    .callout {
+      background-color: var(--bg);
+      border-left: 4px solid var(--primary);
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    a { color: var(--primary); text-decoration: underline; text-underline-offset: 2px; }
+    a:hover { color: var(--primary-dark); }
+    .footer-nav {
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 13px;
+    }
+    .switch-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    .site-footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      background: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Minimal Header Switcher -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-icon">🍬</div>
+        <div>
+          <div class="brand-name">Candy Pop Universe</div>
+          <div class="brand-sub">Atherion Labs</div>
+        </div>
+      </div>
+      <nav class="nav-toggle" aria-label="Legal Navigation">
+        <a href="privacy-policy.html" class="nav-btn">Privacy Policy</a>
+        <a href="terms-and-conditions.html" class="nav-btn active">Terms &amp; Conditions</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Legal Document Body -->
+  <main class="container">
+    <article class="card">
+      <span class="badge">Legal Agreement</span>
+      <h1>Terms &amp; Conditions</h1>
+      
+      <div class="meta-bar">
+        <span><strong>App:</strong> Candy Pop Universe (Android)</span>
+        <span><strong>Developer:</strong> Atherion Labs</span>
+        <span><strong>Last Updated:</strong> October 31, 2026</span>
+      </div>
+
+      <section>
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+          These Terms and Conditions ("Terms") are a binding agreement between you and <strong>Atherion Labs</strong> ("we", "us", or "our"), governing your download, access, and gameplay of <strong>Candy Pop Universe</strong> (the "Game") on Android.
+        </p>
+        <p>
+          By installing, playing, or accessing the Game, you agree to these Terms and our <a href="privacy-policy.html">Privacy Policy</a>. If you do not agree, do not install or use the Game.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Description of the Game</h2>
+        <p>
+          Candy Pop Universe is a casual, single-player match-3 puzzle game provided for personal, non-commercial entertainment. Gameplay involves swapping colorful candies, completing puzzle levels, unlocking destinations across a themed world map, and tracking progress.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. Eligibility &amp; Age Requirements</h2>
+        <p>
+          You must be at least 13 years old (or 16 in the European Economic Area / UK) to play Candy Pop Universe. <strong>The Game is not directed at children under 13.</strong>
+        </p>
+        <p>
+          If you are under the legal age of majority in your jurisdiction, you represent that your parent or guardian has reviewed and accepted these Terms on your behalf.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. License to Play</h2>
+        <p>
+          Atherion Labs grants you a personal, revocable, non-exclusive, non-transferable, limited license to install and play one copy of Candy Pop Universe on an Android device that you own or control, solely for personal entertainment.
+        </p>
+        <p>
+          You do not acquire any ownership rights or intellectual property in the Game.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Gameplay Progression &amp; Virtual Items</h2>
+        <ul>
+          <li>All level completions, stars, world map destinations, and virtual boosters (if applicable) are virtual and hold <strong>no real-world monetary value</strong>.</li>
+          <li>Virtual items cannot be redeemed, sold, traded, or converted into real currency.</li>
+          <li>Local progression is stored on your device and may be erased if you clear application storage or uninstall the app.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. In-App Purchases &amp; Advertisements (If Applicable)</h2>
+        <p>
+          <strong>In-App Purchases:</strong> If purchases are supported, they are processed exclusively through Google Play In-App Billing under Google Play's Terms of Service and refund policies. All purchases are final and non-refundable, except as required by law.
+        </p>
+        <p>
+          <strong>Advertisements:</strong> The Game may display third-party advertisements (such as Google AdMob). You agree not to use ad-blockers, bots, or modifications to interfere with or alter ads.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Intellectual Property</h2>
+        <p>
+          All rights, title, and interest in and to Candy Pop Universe—including game code, candy art, graphics, animations, sound effects, music, visual designs, and the "Candy Pop Universe" name—are the exclusive intellectual property of <strong>Atherion Labs</strong>.
+        </p>
+        <p>
+          You may not copy, reverse-engineer, decompile, modify, distribute, or create derivative works from the Game without express written permission from Atherion Labs.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Prohibited Conduct</h2>
+        <p>You agree not to:</p>
+        <ul>
+          <li>Use cheats, hacks, automation bots, or modded APKs to alter gameplay or scores;</li>
+          <li>Decompile, disassemble, or reverse-engineer the application package;</li>
+          <li>Circumvent security protections, licensing verifications, or ad mechanisms;</li>
+          <li>Use the Game for any unlawful or unauthorized commercial purpose.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>9. Disclaimer of Warranties</h2>
+        <div class="callout">
+          <strong>"AS-IS" DISCLAIMER:</strong> CANDY POP UNIVERSE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED. ATHERION LABS DOES NOT GUARANTEE THAT THE GAME WILL BE UNINTERRUPTED, ERROR-FREE, OR COMPATIBLE WITH EVERY ANDROID DEVICE.
+        </div>
+      </section>
+
+      <section>
+        <h2>10. Limitation of Liability</h2>
+        <p>
+          To the maximum extent permitted by applicable law, Atherion Labs shall not be liable for any indirect, incidental, special, or consequential damages resulting from your use of or inability to use the Game.
+        </p>
+      </section>
+
+      <section>
+        <h2>11. Changes to These Terms</h2>
+        <p>
+          We reserve the right to amend these Terms at any time. Changes will be posted on this page with an updated "Last Updated" date. Continued play constitutes acceptance of the amended Terms.
+        </p>
+      </section>
+
+      <section>
+        <h2>12. Contact Information</h2>
+        <p>
+          If you have questions regarding these Terms, contact us:
+        </p>
+        <p>
+          <strong>Atherion Labs</strong><br>
+          Email: <a href="mailto:supremacharya65@gmail.com">supremacharya65@gmail.com</a><br>
+          App: Candy Pop Universe (Android / Google Play)
+        </p>
+      </section>
+
+      <div class="footer-nav">
+        <span>Looking for our data practices?</span>
+        <a href="privacy-policy.html" class="switch-link">
+          Read Privacy Policy &rarr;
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    &copy; 2026 Atherion Labs. All rights reserved. &bull; Candy Pop Universe
+  </footer>
+
+</body>
+</html>
